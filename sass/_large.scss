@@ -1,0 +1,48 @@
+@media(min-width: 992px){
+	.section__title {
+	
+		font-size: 4rem;
+		
+	}
+    .header {
+        height: 450px;
+		&__text {
+			font-size: 3.2rem;
+			margin-bottom: -.4em;
+		}
+		&__title {
+			font-size: 4.5rem;
+		}
+	}
+	.about {
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+	
+.container {
+	
+	
+	&__text {
+		padding: .6em 3.5em;
+		font-size: 3.6rem;
+	
+	}
+	
+}
+.offert {
+	&__card-box{
+		display: flex;
+		justify-content: center;
+	}
+	&__card {
+		padding: 0 2.8em;
+		margin: 0 1em;
+	}
+}
+}
+@media(min-width: 1200px){
+	.wrapper {
+		max-width: 140rem;
+	}
+}

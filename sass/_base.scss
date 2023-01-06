@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+
+}
+// helper classes
+.wrapper {
+	max-width: 120rem;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.section__title {
+	text-align: center;
+	font-size: 3rem;
+	padding: 2em 0 1.5em;
+	text-transform: uppercase;
+}
+
+// hamburger-btn
+.hamburger {
+	// position: absolute;
+	top: 0em;
+	right: 1em;
+	z-index: 1;
+}
