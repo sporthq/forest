@@ -218,7 +218,7 @@
 
 	&__text {
 		padding: 1em 2em;
-		font-size: 1.8rem;
+		font-size: 2rem;
 		color: $white;
 		border: 1px solid currentColor;
 		z-index: 11;
@@ -253,7 +253,7 @@
 	&__card {
 		text-align: center;
 		margin-bottom: 2em;
-		padding: 0em 2em;
+		padding: 0em 4em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
 		&-title {
 			padding: 1em 0 0.2em;
@@ -294,6 +294,7 @@
 }
 // info
 .info {
+	padding: 2em .2em;
 	margin-top: 3em;
 	background-color: $silver;
 	display: flex;
@@ -325,6 +326,7 @@
 			}
 		}
 		&-item {
+		
 			position: relative;
 			display: flex;
 
@@ -342,14 +344,26 @@
 				transform: translateY(50%);
 				height: 50%;
 				margin: 0;
-				width: 100%;
+				width: 85%;
 				background-color: rgba(147, 151, 149, 0.2);
 				box-shadow: 0 2px 5px rgba(0, 20, 5, 0.3);
 				border-radius: 4px;
 				z-index: -1;
 				// text-align: center;
 			}
+		
 		}
+	}
+}
+
+// footer 
+.footer {
+	text-align: center;
+	border-top: 1px solid #000;
+	padding: 1em;
+	background-color: $silver;
+	&__text {
+		display: inline;
 	}
 }
 

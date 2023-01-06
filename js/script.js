@@ -3,7 +3,13 @@ const navMobile = document.querySelector('.nav-mobile');
 const navItems = document.querySelectorAll('.nav-mobile--item');
 const navLogo = document.querySelector('.nav-mobile__logo--icon');
 const shadow = document.querySelector('.header__shadow');
+const currentYear = document.querySelector('.footer__year');
 
+const getCurYear = function () {
+	const data = new Date().getFullYear()
+	
+	currentYear.textContent = data
+};
 
 const showMobile = function () {
 	burgerBtn.classList.contains('is-active')
@@ -44,3 +50,5 @@ window.addEventListener('scroll', function () {
 		shadow.style.backgroundColor = 'rgba(0, 0, 0, 0.35)';
 	}
 });
+
+getCurYear();
