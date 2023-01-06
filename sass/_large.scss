@@ -34,10 +34,11 @@
 	&__card-box{
 		display: flex;
 		justify-content: center;
+		flex-wrap: nowrap;
 	}
 	&__card {
-		padding: 0 2.8em;
-		margin: 0 1em;
+		max-width: 23%;
+		margin:  1em;
 	}
 }
 }

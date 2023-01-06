@@ -72,8 +72,6 @@
 			}
 		}
 
-	
-
 		&--item {
 			position: relative;
 			z-index: 1001;
@@ -220,10 +218,15 @@
 
 	&__text {
 		padding: 1em 2em;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		color: $white;
 		border: 1px solid currentColor;
 		z-index: 11;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 
 	&__shadow {
@@ -234,15 +237,23 @@
 
 // offert
 .offert {
-	padding: 0 3em;
+	padding: 0 1em;
 	&__subtitle {
 		text-align: center;
 		margin: -1.5em 0 2em;
+		font-weight: 400;
 	}
 
+	&__card-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	&__card {
 		text-align: center;
 		margin-bottom: 2em;
+		padding: 0em 2em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
 		&-title {
 			padding: 1em 0 0.2em;
@@ -259,8 +270,7 @@
 			list-style: none;
 			margin-bottom: 0.5em;
 		}
-		&-item {
-		}
+
 		&-button {
 			padding: 0.8em 4.5em;
 			margin: 1em 0 2em;
@@ -269,16 +279,76 @@
 			transform: translateY(0);
 			border-radius: 7px;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-			transition:  background-color .3s, transform .3s ,color .3s;
+			transition: background-color 0.3s, transform 0.3s, color 0.3s;
 
 			&:hover {
-				background-color:  rgb(47, 155, 37);
+				background-color: rgb(47, 155, 37);
 				transform: translateY(3px);
 				color: $white;
 			}
 		}
 		&-unicode {
 			color: rgb(47, 155, 37);
+		}
+	}
+}
+// info
+.info {
+	margin-top: 3em;
+	background-color: $silver;
+	display: flex;
+	justify-content: center;
+
+	&__box-logo {
+		display: none;
+	}
+
+	&__boxes {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 1em;
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+	
+
+		&-title {
+			text-align: center;
+			font-weight: bold;
+			font-size: 2rem;
+			padding: 1em 0 0.5em;
+			grid-column: 1/4;
+
+			&-3 {
+				margin-bottom: 2em;
+			}
+		}
+		&-item {
+			position: relative;
+			display: flex;
+
+			text-decoration: none;
+			padding: 1.4em;
+			color: $black;
+			z-index: 1000;
+			cursor: pointer;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 10px;
+				right: 10px;
+				transform: translateY(50%);
+				height: 50%;
+				margin: 0;
+				width: 100%;
+				background-color: rgba(147, 151, 149, 0.2);
+				box-shadow: 0 2px 5px rgba(0, 20, 5, 0.3);
+				border-radius: 4px;
+				z-index: -1;
+				// text-align: center;
+			}
 		}
 	}
 }
