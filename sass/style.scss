@@ -102,10 +102,11 @@
 				display: inline-block;
 				top: 50%;
 				transform: translateY(-50%);
-				left: 0.2em;
-				background-color: $color-primary2;
-				height: 3rem;
-				width: 3rem;
+				left: 0;
+				background-color: $black;
+				height: 2rem;
+				width: 2rem;
+				
 				mask-size: cover;
 				-webkit-mask-size: cover;
 			}
@@ -131,10 +132,11 @@
 			text-decoration: none;
 			padding: 2em;
 			letter-spacing: 1px;
-			font-size: 2.2rem;
+			font-size: 2rem;
 			text-transform: uppercase;
 			&:not(:last-child) {
-				border-bottom: 6px solid rgba($color-primary, 0.5);
+				width: 85%;
+				border-bottom:  2px solid rgba($black, 0.5);
 			}
 		}
 	}
