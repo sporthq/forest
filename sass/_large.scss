@@ -1,14 +1,12 @@
-@media(min-width: 992px){
+@media (min-width: 992px) {
 	.section__title {
-	
 		font-size: 4rem;
-		
 	}
-    .header {
-        height: 450px;
+	.header {
+		height: 450px;
 		&__text {
 			font-size: 3.2rem;
-			margin-bottom: -.4em;
+			margin-bottom: -0.4em;
 		}
 		&__title {
 			font-size: 4.5rem;
@@ -19,31 +17,85 @@
 			font-size: 1.8rem;
 		}
 	}
-	
-.container {
-	
-	
-	&__text {
-		padding: .6em 3.5em;
-		font-size: 3.6rem;
-	
+
+	.container {
+		&__text {
+			padding: 0.6em 3.5em;
+			font-size: 3.6rem;
+		}
 	}
-	
-}
-.offert {
-	&__card-box{
+	.offert {
+		&__card-box {
+			display: flex;
+			justify-content: center;
+			flex-wrap: nowrap;
+		}
+		&__card {
+			max-width: 23%;
+			margin: 1em;
+		}
+	}
+	// info
+	.info {
+		padding: 0.2em 0.2em;
+		margin-top: 3em;
+		background-color: $silver;
 		display: flex;
 		justify-content: center;
-		flex-wrap: nowrap;
-	}
-	&__card {
-		max-width: 23%;
-		margin:  1em;
+
+		&__container {
+			
+			padding: 2em 4em;
+		}
+		&__box-logo {
+			padding-left: 3em;
+			display: inline-block;
+			
+			
+		}
+
+		&__logo-svg {
+			height: 6.6rem;
+			width: 7rem;
+		}
+
+		&__name {
+			margin-left: 0.1em;
+			font-size: 6.7rem;
+		}
+
+		&__boxes {
+			column-gap: 1.2em;
+		}
+		&__box {
+			&-title {
+				text-align: left;
+				font-weight: bold;
+				font-size: 2.4rem;
+				padding: 1em 0 0.5em;
+				grid-column: 1/4;
+
+				&-3 {
+					margin-bottom: 0;
+				}
+			}
+			&-item {
+				padding: 0.6em 0;
+			}
+		}
 	}
 }
-}
-@media(min-width: 1200px){
+@media (min-width: 1200px) {
 	.wrapper {
-		max-width: 140rem;
+		max-width: 120rem;
+	}
+
+	.info {
+		&__box-logo {
+			padding-left: 6em;
+			display: inline-block;
+			
+			
+		}
 	}
 }

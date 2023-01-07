@@ -280,6 +280,7 @@
 			border: none;
 			transform: translateY(0);
 			border-radius: 7px;
+			cursor: pointer;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
 			transition: background-color 0.3s, transform 0.3s, color 0.3s;
 
@@ -314,6 +315,7 @@
 	&__box {
 		display: flex;
 		flex-direction: column;
+
 	
 
 		&-title {
@@ -329,9 +331,9 @@
 		}
 		&-item {
 		
+			// background-color: red;
 			position: relative;
 			display: flex;
-
 			text-decoration: none;
 			padding: 1.4em;
 			color: $black;

@@ -116,7 +116,70 @@
 		}
 	}
 
-	// footer
+	// info
+	.info {
+		padding: 0.2em 0.2em;
+		margin-top: 3em;
+		background-color: $silver;
+		display: flex;
+		justify-content: center;
+
+		&__container {
+			display: flex;
+			padding: 2em 2em;
+		}
+		&__box-logo {
+			padding-left: 4em;
+			display: inline-block;
+			width: 50%;
+			transform: translateY(20%);
+		}
+
+		&__logo-svg {
+			height: 4.6rem;
+			width: 5rem;
+		}
+
+		&__name {
+			margin-left: 0.15em;
+			font-size: 4.7rem;
+		}
+
+		&__boxes {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			column-gap: 1em;
+			
+
+			
+		}
+		&__box {
+			display: flex;
+			flex-direction: column;
+			justify-content: start;
+			
+			&-title {
+				text-align: left;
+				font-weight: bold;
+				font-size: 2rem;
+				padding: 1em 0 0.5em;
+				grid-column: 1/4;
+
+				&-3 {
+					margin-bottom: 0;
+				}
+			}
+			&-item {
+				display: inline-block;
+				padding: 0.55em 0;
+				// left: -.5em;
+				&::after {
+					content: '';
+					width: 0%;
+				}
+			}
+		}
+	}
 
 	// footer
 	.footer {
