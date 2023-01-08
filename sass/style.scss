@@ -9,25 +9,25 @@
 .nav {
 	position: relative;
 	display: flex;
-	margin-top: 2em;
+	margin-top: 1em;
 	&-logo {
 		display: flex;
 		align-items: baseline;
+		
 		width: 100%;
 		margin: 0 1.5em;
-		top: 1em;
+		margin-bottom: .5em;
 		&__svg {
 			height: 3.75rem;
 			width: 3.75rem;
-			fill: $color-primary2;
+			transform: translateY(.2em);
 		}
 	}
 
 	&-text {
 		display: inline-block;
-		font-size: 3rem;
-		// font-family: 'Sevillana', cursive;
-		margin-left: 0.2em;
+		font-size: 4rem;
+		margin-left: 0.04em;
 		margin-right: auto;
 	}
 
