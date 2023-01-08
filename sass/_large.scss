@@ -31,8 +31,8 @@
 			flex-wrap: nowrap;
 		}
 		&__card {
-			max-width: 23%;
-			margin: 1em;
+			max-width: 33%;
+			margin: 2em;
 		}
 	}
 	// info
@@ -44,30 +44,31 @@
 		justify-content: center;
 
 		&__container {
+			display: flex;
 			
-			padding: 2em 4em;
+			padding: 2em 3.25em ;
 		}
 		&__box-logo {
-			padding-left: 3em;
+			padding-left: .1em;
 			display: inline-block;
-			
+			transform: translateY(1.25em);
 			
 		}
 
 		&__logo-svg {
-			height: 6.6rem;
-			width: 7rem;
+			height: 5.8rem;
+			width: 6.3rem;
+			transform: translateY(.35em);
 		}
 
 		&__name {
-			margin-left: 0.1em;
-			font-size: 6.7rem;
+			margin-left: -.05em;
+			font-size: 6rem;
 		}
 
-		&__boxes {
-			column-gap: 1.2em;
-		}
+		
 		&__box {
+			
 			&-title {
 				text-align: left;
 				font-weight: bold;
@@ -92,10 +93,15 @@
 
 	.info {
 		&__box-logo {
-			padding-left: 6em;
+			padding-left: 0em;
 			display: inline-block;
-			
-			
+		}
+
+		&__box {
+			&:nth-child(3){
+				// background-color: red;
+				transform: translateX(40%);
+			}
 		}
 	}
 }

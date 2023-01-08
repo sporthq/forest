@@ -832,7 +832,7 @@ body {
     width: 5rem;
   }
   .info__name {
-    margin-left: 0.15em;
+    margin-left: -.15em;
     font-size: 4.7rem;
   }
   .info__boxes {
@@ -917,8 +917,8 @@ body {
         flex-wrap: nowrap;
   }
   .offert__card {
-    max-width: 23%;
-    margin: 1em;
+    max-width: 33%;
+    margin: 2em;
   }
   .info {
     padding: 0.2em 0.2em;
@@ -932,23 +932,26 @@ body {
             justify-content: center;
   }
   .info__container {
-    padding: 2em 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2em 3.25em;
   }
   .info__box-logo {
-    padding-left: 3em;
+    padding-left: .1em;
     display: inline-block;
+    -webkit-transform: translateY(1.25em);
+            transform: translateY(1.25em);
   }
   .info__logo-svg {
-    height: 6.6rem;
-    width: 7rem;
+    height: 5.8rem;
+    width: 6.3rem;
+    -webkit-transform: translateY(0.35em);
+            transform: translateY(0.35em);
   }
   .info__name {
-    margin-left: 0.1em;
-    font-size: 6.7rem;
-  }
-  .info__boxes {
-    -webkit-column-gap: 1.2em;
-            column-gap: 1.2em;
+    margin-left: -.05em;
+    font-size: 6rem;
   }
   .info__box-title {
     text-align: left;
@@ -972,8 +975,12 @@ body {
     max-width: 120rem;
   }
   .info__box-logo {
-    padding-left: 6em;
+    padding-left: 0em;
     display: inline-block;
+  }
+  .info__box:nth-child(3) {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
   }
 }
 /*# sourceMappingURL=style.css.map */
