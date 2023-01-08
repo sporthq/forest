@@ -1,4 +1,4 @@
 # Forest Project
 
-Warch onliny on netlify:
+Warch online on netlify:
 https://forest-sebeq.netlify.app/

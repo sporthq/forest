@@ -24,11 +24,11 @@
 			&__svg {
 				height: 4rem;
 				width: 4rem;
-				transform: translateY(-.1em);
+				transform: translateY(-0.1em);
 			}
 
 			&__text {
-				margin-left: .02em;
+				margin-left: 0.02em;
 				font-size: 4rem;
 			}
 
@@ -142,7 +142,7 @@
 		}
 
 		&__name {
-			margin-left: -.15em;
+			margin-left: -0.15em;
 			font-size: 4.7rem;
 		}
 
@@ -170,7 +170,7 @@
 			&-item {
 				display: inline-block;
 				padding: 0.55em 0;
-				transition: color .3s;
+				transition: color 0.3s;
 				// left: -.5em;
 				&::after {
 					content: '';
@@ -184,6 +184,31 @@
 		}
 	}
 
+	// contact {
+	.contact {
+		&__form {
+			column-gap:  1em;
+			&-box {
+				&:nth-child(1) {
+					grid-column: 1/4;
+					grid-row: 1/2;
+				}
+				&:nth-child(2) {
+					grid-column: 4/7;
+					grid-row: 1/2;
+				}
+				&:nth-child(3) {
+					grid-column: 1/-1;
+					grid-row: 2/3;
+				}
+			}
+
+			&-btn {
+				grid-row: 3/4;
+				grid-column: 5/7;
+			}
+		}
+	}
 	// footer
 	.footer {
 		padding: 1.8em;
