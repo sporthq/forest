@@ -418,12 +418,12 @@ body {
 }
 
 .about__title {
-  font-size: 2.5rem;
+  font-size: 2.15rem;
   margin-bottom: 0.8em;
 }
 
 .about__text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .container {
@@ -1478,4 +1478,3 @@ body {
             transform: translateX(40%);
   }
 }
-/*# sourceMappingURL=style.css.map */
