@@ -110,7 +110,7 @@
 			text-decoration: none;
 			padding: 2em;
 			letter-spacing: 1px;
-			font-size: 1.75rem;
+			font-size: 1.65rem;
 			text-transform: uppercase;
 			&:not(:last-child) {
 				width: 85%;
@@ -133,7 +133,7 @@
 	height: 70vh;
 	max-height: 600px;
 	z-index: -1;
-	
+
 	&__wrapper {
 		position: relative;
 		height: 100%;
@@ -153,8 +153,6 @@
 		z-index: 11;
 		width: 100%;
 		padding: 2em;
-	
-		
 	}
 	&__text {
 		font-size: 2.25rem;
@@ -163,7 +161,7 @@
 		font-size: 2.45rem;
 		width: 100%;
 	}
-	}
+}
 // about
 .about {
 	&__box {
@@ -319,24 +317,26 @@
 // offerts add
 .offerts-add {
 	&__card-box {
+		position: relative;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding: 0 2em;
-		transform: scale(.90);
-		
-		&:last-child{
+		transform: scale(0.9);
+
+		&:last-child {
 			margin-bottom: -2em;
 		}
-
 	}
+	&
 
 	&__card {
-		position: relative;
+	
 		display: flex;
 		flex-direction: column;
 		text-align: center;
-		
+
 		width: 100%;
 		padding: 0 0;
 		border-radius: 7px;
@@ -345,7 +345,43 @@
 		margin-bottom: 2.5em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
 
+		&-button-2 {
+			
+			position: absolute;
+			right: 1.6em;
+			bottom:-1.5em;
 		
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				height: 1%;
+				width: 100%;
+				background-color: $color-primiary3;
+				z-index: -1;
+				transition: height 0.3s;
+			}
+
+			a {
+				color: $black;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 700;
+				transition: color 0.3s;
+				padding: 0.25em;
+				&:hover {
+					color: $white;
+				}
+			}
+
+			&:hover:after,
+			&:focus {
+				height: 100%;
+			}
+		}
 	}
 	&__img {
 		background-size: cover;
@@ -370,7 +406,7 @@
 
 	&__heading {
 		position: absolute;
-		top: 18rem;
+		top: 15.5rem;
 		right: 2em;
 		text-align: right;
 		font-size: 2.8rem;
@@ -416,46 +452,45 @@
 	}
 	&__button {
 		padding: 0.8em 4.5em;
-			margin: 1em 0 2em;
-			background-color: none;
-			border: none;
-			transform: translateY(0);
-			border-radius: 7px;
-			cursor: pointer;
-			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-			transition: background-color 0.3s, transform 0.3s, color 0.3s;
+		margin: 1em 0 2em;
+		background-color: none;
+		border: none;
+		transform: translateY(0);
+		border-radius: 7px;
+		cursor: pointer;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+		transition: background-color 0.3s, transform 0.3s, color 0.3s;
 
+		&:hover {
+			background-color: $color-primiary3;
+			transform: translateY(3px);
+			color: $white;
+		}
+
+		&-2 {
 			&:hover {
-				background-color: $color-primiary3;
-				transform: translateY(3px);
-				color: $white;
+				background-color: rgba(36, 92, 165, 0.93);
 			}
+		}
+		&-3 {
+			position: absolute;
+			right: 0;
+			bottom: -14.5%;
+			// background-color: rgb(47, 155, 37);
 
-			&-2 {
-				&:hover {
-					background-color: rgba(36, 92, 165, 0.93);
-					
-				}
-			}
-			&-3 {
+			&::after {
+				content: '';
 				position: absolute;
+				bottom: 0;
 				right: 0;
-				bottom: -14.5%;
-				// background-color: rgb(47, 155, 37);
-
-				&::after {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					right: 0;
-					left: 0;
-					height: 1%;
-					width: 100%;
-					background-color: $color-primiary3;
-					z-index: -1;
-					transition: height 0.3s;
-				}
+				left: 0;
+				height: 1%;
+				width: 100%;
+				background-color: $color-primiary3;
+				z-index: -1;
+				transition: height 0.3s;
 			}
+		}
 	}
 }
 // info
@@ -628,7 +663,6 @@
 
 // footer
 .footer {
-
 	text-align: center;
 	border-top: 1px solid #000;
 	padding: 1em;

@@ -280,7 +280,7 @@ body {
   text-decoration: none;
   padding: 2em;
   letter-spacing: 1px;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   text-transform: uppercase;
 }
 
@@ -598,6 +598,7 @@ body {
 }
 
 .offerts-add__card-box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -617,8 +618,7 @@ body {
   margin-bottom: -2em;
 }
 
-.offerts-add__card {
-  position: relative;
+.offerts-add .offerts-add__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,6 +635,44 @@ body {
   margin-bottom: 2.5em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
+}
+
+.offerts-add .offerts-add__card-button-2 {
+  position: absolute;
+  right: 1.6em;
+  bottom: -1.5em;
+}
+
+.offerts-add .offerts-add__card-button-2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 1%;
+  width: 100%;
+  background-color: #2f9b25;
+  z-index: -1;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.offerts-add .offerts-add__card-button-2 a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  padding: 0.25em;
+}
+
+.offerts-add .offerts-add__card-button-2 a:hover {
+  color: white;
+}
+
+.offerts-add .offerts-add__card-button-2:hover:after, .offerts-add .offerts-add__card-button-2:focus {
+  height: 100%;
 }
 
 .offerts-add__img {
@@ -658,7 +696,7 @@ body {
 
 .offerts-add__heading {
   position: absolute;
-  top: 18rem;
+  top: 15.5rem;
   right: 2em;
   text-align: right;
   font-size: 2.8rem;
@@ -1160,12 +1198,16 @@ body {
   .offerts-add__card-box:nth-child(1) {
     margin-right: -2.5em;
   }
-  __item {
+  .offerts-add__item {
     font-size: 1.75rem;
   }
-  __button {
+  .offerts-add__button {
     font-size: 1.8rem;
     width: 80%;
+  }
+  .offerts-add .offerts-add__card-button-2 {
+    bottom: 1.2em;
+    font-size: 2rem;
   }
   .info {
     padding: 0.2em 0.2em;
@@ -1365,6 +1407,9 @@ body {
   .offerts-add__button {
     font-size: 2rem;
     width: 80%;
+  }
+  .offerts-add .offerts-add__card-button-2 {
+    bottom: 1em;
   }
   .info {
     padding: 0.2em 0.2em;

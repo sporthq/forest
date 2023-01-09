@@ -44,7 +44,7 @@ const showMobileNav = () => {
 burgerBtn.addEventListener('click', showMobileNav);
 
 window.addEventListener('scroll', function () {
-	if (window.scrollY > 20) {
+	if (window.scrollY > 120) {
 		burgerBtn.classList.remove('is-active');
 		navMobile.style.transform = 'translateX(102%)';
 		shadow.style.backgroundColor = 'rgba(0, 0, 0, 0.35)';
