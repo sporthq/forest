@@ -66,7 +66,9 @@
 		background-image: url('../img/jungle-big.jpg');
 		height: 350px;
 
-		
+		&__wrapper {
+			position: relative;
+		}
 		&__title {
 			font-size: 3rem;
 		}
@@ -123,22 +125,26 @@
 		&__cards {
 			display: flex;
 			justify-content: center;
+			margin-top: -2.65em;
+			margin-bottom: -5em;
 		}
 
 		&__card-box {
 			width: 50%;
-		}
-
-	
-		&__item {
-			font-size: 1.75rem;
-		
-		}
-		&__button {
-			font-size: 1.8rem;
-			width: 80%;
+			transform: scale(0.85);
+			&:nth-child(1) {
+				margin-right: -2.5em;
+			}
 		}
 	}
+	&__item {
+		font-size: 1.75rem;
+	}
+	&__button {
+		font-size: 1.8rem;
+		width: 80%;
+	}
+
 	// info
 	.info {
 		padding: 0.2em 0.2em;
@@ -209,7 +215,6 @@
 	// contact {
 	.contact {
 		&__box {
-			
 			flex-direction: row;
 
 			&-title {
@@ -220,7 +225,7 @@
 			display: flex;
 			flex-direction: column;
 			width: 50%;
-			column-gap:  1em;
+			column-gap: 1em;
 			margin-right: 2em;
 			height: 100%;
 			&-box {
@@ -238,7 +243,6 @@
 				}
 
 				textarea {
-					
 					min-height: 181px;
 				}
 			}
@@ -248,8 +252,7 @@
 				grid-column: 5/7;
 			}
 		}
-		&__map{
-			
+		&__map {
 			width: 50%;
 		}
 	}

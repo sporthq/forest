@@ -280,7 +280,7 @@ body {
   text-decoration: none;
   padding: 2em;
   letter-spacing: 1px;
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
 }
 
@@ -609,6 +609,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 2em;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.offerts-add__card-box:last-child {
+  margin-bottom: -2em;
 }
 
 .offerts-add__card {
@@ -621,11 +627,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-bottom: 3em;
   width: 100%;
   padding: 0 0;
   border-radius: 7px;
   overflow: hidden;
+  margin-top: -1.75em;
+  margin-bottom: 2.5em;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
 }
@@ -780,7 +787,7 @@ body {
 .info__box-title {
   text-align: center;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.75rem;
   padding: 1em 0 0.5em;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -1084,6 +1091,9 @@ body {
     background-image: url("../img/jungle-big.jpg");
     height: 350px;
   }
+  .header__wrapper {
+    position: relative;
+  }
   .header__title {
     font-size: 3rem;
   }
@@ -1139,14 +1149,21 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: -2.65em;
+    margin-bottom: -5em;
   }
   .offerts-add__card-box {
     width: 50%;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
   }
-  .offerts-add__item {
+  .offerts-add__card-box:nth-child(1) {
+    margin-right: -2.5em;
+  }
+  __item {
     font-size: 1.75rem;
   }
-  .offerts-add__button {
+  __button {
     font-size: 1.8rem;
     width: 80%;
   }
@@ -1339,6 +1356,8 @@ body {
   }
   .offerts-add__card-box {
     width: 50%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .offerts-add__item {
     font-size: 1.95rem;
