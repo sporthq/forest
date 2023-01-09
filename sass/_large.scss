@@ -55,6 +55,7 @@
 			width: 50%;
 			transform: scale(.80);
 		}
+	
 
 		&__item {
 			font-size: 1.95rem;
@@ -63,6 +64,10 @@
 			font-size: 2rem;
 			width: 80%;
 		}
+	}
+	.offerts-add .offerts-add__card-button-2{
+		bottom: 1em;
+
 	}
 	// info
 	.info {
