@@ -186,8 +186,21 @@
 
 	// contact {
 	.contact {
+		&__box {
+			
+			flex-direction: row;
+
+			&-title {
+				display: none;
+			}
+		}
 		&__form {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
 			column-gap:  1em;
+			margin-right: 2em;
+			height: 100%;
 			&-box {
 				&:nth-child(1) {
 					grid-column: 1/4;
@@ -201,12 +214,21 @@
 					grid-column: 1/-1;
 					grid-row: 2/3;
 				}
+
+				textarea {
+					
+					min-height: 181px;
+				}
 			}
 
 			&-btn {
 				grid-row: 3/4;
 				grid-column: 5/7;
 			}
+		}
+		&__map{
+			
+			width: 50%;
 		}
 	}
 	// footer

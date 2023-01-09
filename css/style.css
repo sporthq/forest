@@ -673,6 +673,20 @@ body {
   padding: 0 2em;
 }
 
+.contact__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__box-title {
+  padding-top: 1.5em;
+}
+
 .contact__form {
   display: -ms-grid;
   display: grid;
@@ -687,14 +701,14 @@ body {
 .contact__form-box label {
   position: absolute;
   top: 10px;
-  padding: 0  1em;
+  padding: 0 1em;
   display: block;
   margin-bottom: 0.5em;
   color: #727272;
-  -webkit-transition: background-color .3s, color .3s, -webkit-transform .3s;
-  transition: background-color .3s, color .3s, -webkit-transform .3s;
-  transition: background-color .3s, color .3s, transform .3s;
-  transition: background-color .3s, color .3s, transform .3s, -webkit-transform .3s;
+  -webkit-transition: background-color 0.3s, color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, -webkit-transform 0.3s;
 }
 
 .contact__form-box textarea {
@@ -771,14 +785,20 @@ body {
   border-radius: 7px;
   font-weight: bold;
   cursor: pointer;
-  -webkit-transition: background-color .3s , color .3s;
-  transition: background-color .3s , color .3s;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .contact__form-btn:hover, .contact__form-btn:focus {
   outline: none;
   background-color: #3bc42f;
   color: white;
+}
+
+.contact__map iframe {
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 1.25em;
 }
 
 .footer {
@@ -1037,9 +1057,28 @@ body {
   .info__box-item:hover {
     color: #727272;
   }
+  .contact__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact__box-title {
+    display: none;
+  }
   .contact__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
     -webkit-column-gap: 1em;
             column-gap: 1em;
+    margin-right: 2em;
+    height: 100%;
   }
   .contact__form-box:nth-child(1) {
     -ms-grid-column: 1;
@@ -1063,6 +1102,9 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 2/3;
   }
+  .contact__form-box textarea {
+    min-height: 181px;
+  }
   .contact__form-btn {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -1070,6 +1112,9 @@ body {
     -ms-grid-column: 5;
     -ms-grid-column-span: 2;
     grid-column: 5/7;
+  }
+  .contact__map {
+    width: 50%;
   }
   .footer {
     padding: 1.8em;

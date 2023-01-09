@@ -369,9 +369,16 @@
 
 .contact {
 	padding: 0 2em;
+	&__box {
+		display: flex;
+		flex-direction: column;
+
+		&-title {
+			padding-top: 1.5em;
+		}
+	}
 
 	&__form {
-		
 		display: grid;
 		grid-template-columns: repeat(6, 1fr);
 
@@ -380,11 +387,11 @@
 			label {
 				position: absolute;
 				top: 10px;
-				padding: 0  1em;
+				padding: 0 1em;
 				display: block;
 				margin-bottom: 0.5em;
 				color: $silver-dark;
-				transition: background-color .3s, color .3s, transform .3s;
+				transition: background-color 0.3s, color 0.3s, transform 0.3s;
 			}
 			textarea {
 				max-width: 100%;
@@ -392,7 +399,6 @@
 				min-width: 100%;
 			}
 
-		
 			input,
 			textarea {
 				padding: 1em 2em;
@@ -401,19 +407,17 @@
 				color: $black;
 				background: none;
 				border: 1px solid rgba(0, 0, 0, 0.24);
-				
 
 				&:focus,
 				&:valid {
 					// outline: none;
 					// border: 1px solid rgba(0, 0, 0, 0.8);
 
-				~.contact__form-label {
-					background-color: $white;
-					transform: translate(1rem, -2.5rem);
-					color: $black;
-				}
-					
+					~ .contact__form-label {
+						background-color: $white;
+						transform: translate(1rem, -2.5rem);
+						color: $black;
+					}
 
 					&:valid {
 						outline: none;
@@ -423,10 +427,7 @@
 						outline: none;
 						border: 1px solid rgba(224, 4, 4, 0.8);
 					}
-					
 				}
-				
-				
 			}
 			&:nth-child(1) {
 				grid-column: 1/-1;
@@ -449,19 +450,25 @@
 			background-color: $color-primiary3;
 			color: $white;
 			border-radius: 7px;
-			
+
 			font-weight: bold;
 			cursor: pointer;
-			transition: background-color .3s , color .3s;
+			transition: background-color 0.3s, color 0.3s;
 
-			&:hover, 
+			&:hover,
 			&:focus {
 				outline: none;
-				background-color: lighten($color-primiary3,10%);
-				color: $white
+				background-color: lighten($color-primiary3, 10%);
+				color: $white;
 			}
 		}
-		
+	}
+	&__map {
+		iframe {
+			width: 100%;
+			min-height: 400px;
+			margin-bottom: 1.25em;
+		}
 	}
 }
 
