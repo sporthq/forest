@@ -55,9 +55,11 @@
 			z-index: 1001;
 			display: flex;
 			align-items: center;
-			transform: translateX(200%);
-			left: 8%;
-			background-color: $white;
+			left: 4%;
+			background-color: transparent;
+			
+			
+		
 
 			&:nth-child(1) {
 				transition: transform 0.4s ease;
@@ -69,6 +71,7 @@
 				transition: transform 0.8s ease;
 			}
 			&:nth-child(4) {
+				
 				transition: transform 1s ease;
 			}
 			&:nth-child(1)::before,
@@ -114,7 +117,7 @@
 			text-transform: uppercase;
 			&:not(:last-child) {
 				width: 85%;
-				border-bottom: 2px solid rgba($black, 0.5);
+				border-bottom: 1px solid rgba($black, 0.5);
 			}
 		}
 	}
