@@ -110,7 +110,7 @@
 			text-decoration: none;
 			padding: 2em;
 			letter-spacing: 1px;
-			font-size: 1.65rem;
+			font-size: 2rem;
 			text-transform: uppercase;
 			&:not(:last-child) {
 				width: 85%;
@@ -329,10 +329,7 @@
 			margin-bottom: -2em;
 		}
 	}
-	&
-
-	&__card {
-	
+	& &__card {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -346,11 +343,9 @@
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
 
 		&-button-2 {
-			
 			position: absolute;
 			right: 1.6em;
-			bottom:-1.5em;
-		
+			bottom: -1.5em;
 
 			&::after {
 				content: '';
@@ -672,6 +667,18 @@
 	}
 }
 
+@media (max-width: 400px) {
+	
+	.nav {
+		&-mobile {
+			&--item {
+				font-size: 1.65rem;
+			}
+		}
+	}
+}
 @import './small';
 @import './medium';
 @import './large';
+
+

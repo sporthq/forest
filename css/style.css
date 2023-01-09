@@ -280,7 +280,7 @@ body {
   text-decoration: none;
   padding: 2em;
   letter-spacing: 1px;
-  font-size: 1.65rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -1007,6 +1007,12 @@ body {
 
 .footer__text {
   display: inline;
+}
+
+@media (max-width: 400px) {
+  .nav-mobile--item {
+    font-size: 1.65rem;
+  }
 }
 
 @media (min-width: 576px) {
