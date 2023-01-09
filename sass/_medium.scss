@@ -117,6 +117,25 @@
 		}
 	}
 
+	// offerts-add
+	.offerts-add {
+		&__cards {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__card-box {
+			width: 50%;
+		}
+
+		&__item {
+			font-size: 1.75rem;
+		}
+		&__button {
+			font-size: 1.8rem;
+			width: 80%;
+		}
+	}
 	// info
 	.info {
 		padding: 0.2em 0.2em;

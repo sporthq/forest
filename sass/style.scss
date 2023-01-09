@@ -229,6 +229,7 @@
 		margin-bottom: 2em;
 		padding: 0em 4em;
 		box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
+
 		&-title {
 			padding: 1em 0 0.2em;
 			font-size: 2.2rem;
@@ -302,6 +303,139 @@
 		&-unicode {
 			color: rgb(47, 155, 37);
 		}
+	}
+}
+
+// offerts add
+.offerts-add {
+	&__card-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 2em;
+	}
+
+	&__card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 3em;
+		width: 100%;
+		padding: 0 0;
+		border-radius: 7px;
+		overflow: hidden;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 7px;
+	}
+	&__img {
+		background-size: cover;
+		background-position: center;
+		height: 23rem;
+		width: 100%;
+		background-blend-mode: hue;
+		clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+		&--1 {
+			background-image: linear-gradient(
+					to right bottom,
+					$color-primary,
+					$color-primiary3
+				),
+				url(../img/offert-1.jpg);
+		}
+		&--2 {
+			background-image: url(../img/offert-2.jpg);
+		}
+	}
+
+	&__heading {
+		position: absolute;
+		top: 18rem;
+		right: 2em;
+		text-align: right;
+		font-size: 2.8rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $white;
+
+		&-span {
+			padding: 0.3em;
+
+			&--1 {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba($color-primary2, 0.93),
+					rgba($color-primiary3, 0.93)
+				);
+			}
+			&--2 {
+				position: relative;
+				background-image: linear-gradient(
+					to right bottom,
+					rgba(36, 92, 165, 0.93),
+					rgba(2, 22, 58, 0.93)
+				);
+			}
+		}
+	}
+	&__detalis {
+		margin: 1em 0 0;
+	}
+	&__items {
+		list-style: none;
+		width: 80%;
+		margin: 0 auto;
+	}
+	&__item {
+		text-align: center;
+		padding: 1em;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+		}
+	}
+	&__button {
+		padding: 0.8em 4.5em;
+			margin: 1em 0 2em;
+			background-color: none;
+			border: none;
+			transform: translateY(0);
+			border-radius: 7px;
+			cursor: pointer;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+			transition: background-color 0.3s, transform 0.3s, color 0.3s;
+
+			&:hover {
+				background-color: $color-primiary3;
+				transform: translateY(3px);
+				color: $white;
+			}
+
+			&-2 {
+				&:hover {
+					background-color: rgba(36, 92, 165, 0.93);
+					
+				}
+			}
+			&-3 {
+				position: absolute;
+				right: 0;
+				bottom: -14.5%;
+				// background-color: rgb(47, 155, 37);
+
+				&::after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					height: 1%;
+					width: 100%;
+					background-color: $color-primiary3;
+					z-index: -1;
+					transition: height 0.3s;
+				}
+			}
 	}
 }
 // info
