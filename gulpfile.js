@@ -98,4 +98,13 @@ const mainFunctions = parallel(handleKits, sassCompiler, javaScript, convertImag
 exports.cleanStuff = cleanStuff
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
 
-exports.netlify = netlify;
+const gulp   = require('gulp');
+const deploy = require('gulp-gh-pages');
+
+gulp.task('deploy', function () {
+  return gulp.src("./**/*")
+	.pipe(deploy({ 
+	  remoteUrl: "https://github.com/sporthq/sporthq_here.github.io.git",
+	  branch: "master"
+	}))
+});
