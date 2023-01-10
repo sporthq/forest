@@ -4,7 +4,7 @@
   "description": "Warch online on netlify:\r https://forest-sebeq.netlify.app/",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build index.html"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,8 @@
     "gulp-uglify": "^3.0.2",
     "parcel-bundler": "^1.12.3",
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "gulp-netlify": "^1.1.0"
   }
 }

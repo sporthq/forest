@@ -83,8 +83,19 @@ function watchForChanges(done) {
     done()
 }
 
+const netlify = require('gulp-netlify')
+gulp.task('deploy', function () {
+	gulp.src('./public/**/*')
+	  .pipe(netlify({
+		site_id: '845b9625-f153-4f4d-8947-d3ed780cec67',
+		access_token: '2EjcF16_Pqy8usuLFq5x0iVs4sztK-2R7E9l9cKUzUg'
+
+
+	  }))
+  })
 
 const mainFunctions = parallel(handleKits, sassCompiler, javaScript, convertImages)
 exports.cleanStuff = cleanStuff
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
-exports.build = series(copyfontawesomeWebfontsTask, scssTask,jsTask)
+
+exports.netlify = netlify;
