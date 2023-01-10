@@ -4,7 +4,7 @@
   "description": "Warch online on netlify:\r https://forest-sebeq.netlify.app/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,10 @@
     "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.11",
     "clean": "^4.0.2",
-    "gulp-clean": "^0.4.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-cssnano": "^2.1.3",
     "gulp-imagemin": "^7.1.0",
     "gulp-kit": "^0.3.0",
@@ -34,6 +34,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "parcel-bundler": "^1.12.3",
     "sass": "^1.57.1"
   }
 }

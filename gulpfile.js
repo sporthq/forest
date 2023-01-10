@@ -87,3 +87,4 @@ function watchForChanges(done) {
 const mainFunctions = parallel(handleKits, sassCompiler, javaScript, convertImages)
 exports.cleanStuff = cleanStuff
 exports.default = series(mainFunctions, startBrowserSync, watchForChanges)
+exports.build = series(copyfontawesomeWebfontsTask, scssTask,jsTask)
