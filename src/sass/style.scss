@@ -57,9 +57,6 @@
 			align-items: center;
 			left: 4%;
 			background-color: transparent;
-			
-			
-		
 
 			&:nth-child(1) {
 				transition: transform 0.4s ease;
@@ -71,7 +68,6 @@
 				transition: transform 0.8s ease;
 			}
 			&:nth-child(4) {
-				
 				transition: transform 1s ease;
 			}
 			&:nth-child(1)::before,
@@ -129,6 +125,8 @@
 // header
 .header {
 	position: relative;
+	
+	// background-image: url('../img/jungle-small.jpg');
 	background-image: url('../img/jungle-small.jpg');
 	background-size: cover;
 	background-position: center;
@@ -671,7 +669,6 @@
 }
 
 @media (max-width: 370px) {
-	
 	.nav {
 		&-mobile {
 			&--item {
@@ -683,5 +680,3 @@
 @import './small';
 @import './medium';
 @import './large';
-
-

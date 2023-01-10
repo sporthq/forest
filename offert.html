@@ -10,10 +10,10 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1.0, initial-scale=1.0">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon//favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon//site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./dist/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./dist/img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./dist/img/favicon//site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Fonts -->
@@ -23,14 +23,19 @@
     <!-- Hamburger BTN -->
     <link href="dist/hamburgers.css" rel="stylesheet">
     <!-- Style CSS  -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+
+
+
 </head>
 
 <body>
 
     <nav class="nav nav__mobile  ">
         <div class="nav-logo-mobile">
-            <img class="nav-logo-mobile__svg" src="./img/icons/tree.svg" alt="">
+            <img class="nav-logo-mobile__svg" src="./dist/img/icons/tree.svg" alt="ikona drzewka">
             <p class="nav-text">Forest</p>
             <button class="hamburger hamburger--emphatic  " type="button">
                 <span class="hamburger-box">
@@ -42,8 +47,8 @@
         <div class="nav-mobile__container">
             <div class="nav-mobile">
                 <a href="./index.html" class="nav-mobile--item">Home</a>
-                <a href="./index.html#about" class="nav-mobile--item">O nas</a>
-                <a href="./index.html#offert" class="nav-mobile--item">Oferta</a>
+                <a href="./index.html" class="nav-mobile--item">O nas</a>
+                <a href="#offert" class="nav-mobile--item">Oferta</a>
                 <a href="./contact.html" class="nav-mobile--item">Kontakt</a>
             </div>
 
@@ -55,7 +60,7 @@
     <div class="wrapper">
         <nav class=" nav-desktop">
             <div class="nav-desktop__logo">
-                <img class="nav-desktop__svg" src="./img/icons/tree.svg" alt="">
+                <img class="nav-desktop__svg" src="./dist/img/icons/tree.svg" alt="ikona drzewka">
                 <p class="nav-desktop__text">Forest</p>
             </div>
             <div class="nav-desktop__items">
@@ -138,7 +143,8 @@
                             <li class="offerts-add__item">- opcja poza pakietem</li>
                         </ul>
                         <button class="offerts-add__button offerts-add__button-2">Wybierz</button>
-                        <span class="offerts-add__card-button-2"><a rel="noopener" href="./index.html#offert">Pozostałe oferty</a>
+                        <span class="offerts-add__card-button-2"><a rel="noopener" href="./index.html#offert">Pozostałe
+                                oferty</a>
                         </span>
                     </div>
 
@@ -161,9 +167,9 @@
 
                 <div class="info__box-logo">
                     <!-- <svg class="info__logo-svg">
-                    <use xlink:href="img/icons/sprite.svg#icon-tree"></use>
-                </svg> -->
-                    <img class="info__logo-svg" src="./img/icons/tree.svg" alt="">
+            <use xlink:href="img/icons/sprite.svg#icon-tree"></use>
+        </svg> -->
+                    <img class="info__logo-svg" src="./dist/img/icons/tree.svg" alt="ikona drzewka">
                     <span class="info__name">Forest</span>
                 </div>
                 <div class="info__boxes">
@@ -190,11 +196,12 @@
         </div>
 
     </section>
+    </main>
     <footer class="footer">
         &copy; <span class="footer__year"></span>
         <p class="footer__text">Forest Group Company Ltd.</p>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./dist/js/script.min.js"></script>
 </body>
 
 </html>
