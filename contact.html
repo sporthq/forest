@@ -3,9 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Kontakt do nas | Forest</title>
+    <meta name="description"
+        content="Zadzwoń do nas lub napisz e-mail - udzielimy odpowiedzi na wszystkie Twoje pytania i rozwiejemy wątpliwości. Dowiedz się więcej.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0, initial-scale=1.0">
-    <title>Forest</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon//site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,69 +88,73 @@
     <div class="contact" id="contact">
         <div class="section__title">Kontakt</div>
         <div class="wrapper contact__box">
-            
+
             <form class="contact__form">
                 <div class="contact__form-box ">
-                    <input  required type="text"  id="name" class="contact__form-input"></input>
+                    <input required type="text" id="name" class="contact__form-input"></input>
                     <label for="name" class="contact__form-label">Imie i Nazwisko:</label>
                 </div>
                 <div class="contact__form-box">
-                    <input  required type="email" id="email" class="contact__form-input"></input>
+                    <input required type="email" id="email" class="contact__form-input"></input>
                     <label for="email" class="contact__form-label">Adres e-mail:</label>
                 </div>
                 <div class="contact__form-box">
-                    <textarea required class="contact__form-textarea"  id="msg"></textarea>
+                    <textarea required class="contact__form-textarea" id="msg"></textarea>
                     <label for="msg" class="contact__form-label">Wiadomość:</label>
                 </div>
                 <button class="contact__form-btn" type="submit">Wyślij</button>
-        </form>
+            </form>
 
-        <div class="section__title contact__box-title">Mapa dojazdu</div>
-        <div class="contact__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.846417481821!2d19.892409015674616!3d50.0891622794272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a32728962db%3A0x4344067c5fa03761!2sJasnog%C3%B3rska%202%2C%2031-358%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1673261183502!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+            <div class="section__title contact__box-title">Mapa dojazdu</div>
+            <div class="contact__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.846417481821!2d19.892409015674616!3d50.0891622794272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a32728962db%3A0x4344067c5fa03761!2sJasnog%C3%B3rska%202%2C%2031-358%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1673261183502!5m2!1spl!2spl"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
 
 
-    <section class="info" >
+    <section class="info">
         <div class="wrapper">
             <div class="info__container">
 
-            
-            <div class="info__box-logo">
-                <!-- <svg class="info__logo-svg">
+
+                <div class="info__box-logo">
+                    <!-- <svg class="info__logo-svg">
                     <use xlink:href="img/icons/sprite.svg#icon-tree"></use>
                 </svg> -->
-                <img class="info__logo-svg" src="./img/icons/tree.svg" alt="">
-                <span class="info__name">Forest</span>
-            </div>
-            <div class="info__boxes">
-                <div class="info__box">
-                    <p class="info__box-title">O nas</p>
-                    <a href="#" class="info__box-item">Historia</a>
-                    <a href="#" class="info__box-item">Parki</a>
-                    <a href="#" class="info__box-item">Opinie</a>
+                    <img class="info__logo-svg" src="./img/icons/tree.svg" alt="">
+                    <span class="info__name">Forest</span>
                 </div>
-                <div class="info__box">
-                    <p class="info__box-title">Nasz firma</p>
-                    <a href="#" class="info__box-item">Praca</a>
-                    <a href="#" class="info__box-item">Kadry</a>
-                    <a href="#" class="info__box-item">Zarząd</a>
-                </div>
-                <div class="info__box ">
-                    <p class="info__box-title info__box-title-3">Dokumenty</p>
-                    <a href="#" class="info__box-item">Wnioski</a>
-                    <a href="#" class="info__box-item">Rezerwacje</a>
-                    
+                <div class="info__boxes">
+                    <div class="info__box">
+                        <p class="info__box-title">O nas</p>
+                        <a href="#" class="info__box-item">Historia</a>
+                        <a href="#" class="info__box-item">Parki</a>
+                        <a href="#" class="info__box-item">Opinie</a>
+                    </div>
+                    <div class="info__box">
+                        <p class="info__box-title">Nasz firma</p>
+                        <a href="#" class="info__box-item">Praca</a>
+                        <a href="#" class="info__box-item">Kadry</a>
+                        <a href="#" class="info__box-item">Zarząd</a>
+                    </div>
+                    <div class="info__box ">
+                        <p class="info__box-title info__box-title-3">Dokumenty</p>
+                        <a href="#" class="info__box-item">Wnioski</a>
+                        <a href="#" class="info__box-item">Rezerwacje</a>
+
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-      
+
     </section>
     <footer class="footer">
-        &copy; <span class="footer__year"></span> <p class="footer__text">Forest Group Company Ltd.</p>
+        &copy; <span class="footer__year"></span>
+        <p class="footer__text">Forest Group Company Ltd.</p>
     </footer>
     <script src="./js/script.js"></script>
 </body>

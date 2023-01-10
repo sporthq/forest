@@ -158,10 +158,10 @@
 		padding: 2em;
 	}
 	&__text {
-		font-size: 2.75rem;
+		font-size: 2.85rem;
 	}
 	&__title {
-		font-size: 2.85rem;
+		font-size: 2.95rem;
 		width: 100%;
 	}
 }
@@ -670,7 +670,7 @@
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 370px) {
 	
 	.nav {
 		&-mobile {
