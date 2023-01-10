@@ -21,6 +21,7 @@
     "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.11",
     "clean": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-babel": "^8.0.0",
